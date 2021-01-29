@@ -10,8 +10,8 @@ function RightBar(props) {
             var getId = cpn[i].getAttribute("prd_id");
             for (var product in arr) {
                 if (arr[product]['id'] === getId) {
-                    // document.getElementById(getId).setAttribute("disabled", "disabled");
-                    cpn.target.setAttribute("disabled", "disabled");
+                    document.getElementById(getId).setAttribute("disabled", "disabled");
+                    // cpn.target.setAttribute("disabled", "disabled");
                     document.getElementById(getId).innerHTML = "Added";
                 }
             }

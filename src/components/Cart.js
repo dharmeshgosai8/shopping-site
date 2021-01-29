@@ -1,7 +1,7 @@
 function Cart() {
     var arr = localStorage.getItem('myCart') ? JSON.parse(localStorage.getItem('myCart')) : [];
     // console.log(arr.length);
-
+    
     function removeProduct(e) {
         e.preventDefault();
         var id = e.target.getAttribute("id");
@@ -14,7 +14,7 @@ function Cart() {
     }
     return(
         <div className="container">
-            {arr.length > 0 ? (
+            {arr.length >= 1 ? (
                 <div>
                 <h3>Cart product</h3>
                 <ul className="row">
