@@ -1,0 +1,4 @@
+nav{padding: 10px;text-align: center;}
+nav li{margin-right: 10px;display: inline-block;list-style: none;}
+nav li a{font-size: 15px;text-transform: uppercase;text-decoration: none;}
+.container{min-height: calc(100vh - 104px);}

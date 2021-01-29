@@ -1,0 +1,87 @@
+[
+{
+    "category": [
+      {
+        "id": 1,
+        "title": "Mens"
+      },
+      {
+        "id": 2,
+        "title": "Womens"
+      },
+      {
+        "id": 3,
+        "title": "Kids"
+      }
+      ,
+      {
+        "id": 4,
+        "title": "All"
+      }
+    ],
+    "brand": [
+      {
+        "id": 1,
+        "title": "Puma"
+      },
+      {
+        "id": 2,
+        "title": "Nike"
+      },
+      {
+        "id": 3,
+        "title": "Addidas"
+      }
+    ],
+    "product": [
+      {
+        "id": 1,
+        "title": "product 1",
+        "price": 1500,
+        "imgPath": "product2.jpg",
+        "categoryId":1,
+        "brandId":2
+      },
+      {
+        "id": 2,
+        "title": "product 2",
+        "price": 2500,
+        "imgPath": "product1.jpg",
+        "categoryId":2,
+        "brandId":1
+      },
+      {
+        "id": 3,
+        "title": "product 3",
+        "price": 5500,
+        "imgPath": "product3.jpg",
+        "categoryId":3,
+        "brandId":3
+      },
+      {
+        "id": 4,
+        "title": "product 4",
+        "price": 6500,
+        "imgPath": "product4.jpg",
+        "categoryId":3,
+        "brandId":1
+      },
+      {
+        "id": 5,
+        "title": "product 5",
+        "price": 1500,
+        "imgPath": "product5.jpg",
+        "categoryId": 1,
+        "brandId": 2
+      },
+      {
+        "id": 6,
+        "title": "product 6",
+        "price": 2500,
+        "imgPath": "product6.jpg",
+        "categoryId": 2,
+        "brandId": 1
+      }
+    ]
+  }
+]
