@@ -11,12 +11,16 @@ function Cart() {
         });
         localStorage.setItem('myCart', JSON.stringify(arr));
         document.getElementById('cnt').innerHTML = arr.length;
+        if (arr.length === 0) {
+            document.getElementById('no-prd').innerHTML = "No Poduct in Cart";
+
+        }
     }
     return(
         <div className="container">
             {arr.length >= 1 ? (
                 <div>
-                <h3>Cart product</h3>
+                    <h3 id="no-prd">Cart product</h3>
                 <ul className="row">
                     {arr.map((item) =>                
                     <li className="col-sm-12 mb-4" key={item.id}>
@@ -33,7 +37,7 @@ function Cart() {
                 ): 
                 (
                     <div className="container">
-                        <h3>No Product in Cart</h3>
+                        <h3>No Poduct in Cart</h3>
                     </div>
                 )
             }
