@@ -22,7 +22,7 @@ function Home() {
                     console.log(error);
                 }
             )
-    }, [])
+    }, [DataApi])
     function getCatId(id){
         setCatId(id);
     }

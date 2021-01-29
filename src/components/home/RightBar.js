@@ -11,7 +11,7 @@ function RightBar(props) {
             for (var product in arr) {
                 if (arr[product]['id'] === getId) {
                     // document.getElementById(getId).setAttribute("disabled", "disabled");
-                    // cpn.target.setAttribute("disabled", "disabled");
+                    cpn.target.setAttribute("disabled", "disabled");
                     document.getElementById(getId).innerHTML = "Added";
                 }
             }
@@ -36,16 +36,17 @@ function RightBar(props) {
         localStorage.setItem('myCart', JSON.stringify(arr));
         
         props.getProduct(arr);
-        // e.target.setAttribute("disabled", "disabled");
+        e.target.setAttribute("disabled", "disabled");
         e.target.innerHTML = "Added";
     }
     const ID = props.passCatId;
+    // const ID = CID.toString();
     return (
         <div className="rightbar">
             <div>
                 {props.items.map((item) =>
                     <ul key={item} > 
-                        {(ID == 4) ? (
+                        {(ID === '4') ? (
                             <div className="row">
                                 {item.product.map(function (prd) {
                                     return (
@@ -62,7 +63,7 @@ function RightBar(props) {
                             </div>
                         ):ID ? (
                             <div className="row">
-                                {item.product.filter(prd => prd.categoryId == ID).map(filteredID => (
+                                    {item.product.filter(prd => prd.categoryId === parseInt(ID)).map(filteredID => (
                                     <li key={filteredID.id} data_id={filteredID.categoryId} className="col-md-4 mb-4">
                                         <div className="text-center prd-wrap">
                                             <img src={imgPathVal + filteredID.imgPath} alt="product" />
